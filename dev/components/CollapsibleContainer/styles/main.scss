@@ -1,0 +1,18 @@
+.collapsibleContainer {
+    &__top {
+        border-bottom: 1px solid $gray-light;
+        &__title {
+            display: inline-block;
+            float: left;
+        }
+
+        &__button {
+            display: inline-block;
+            float: right;
+        }
+    }
+
+    &__content {
+        clear: both;
+    }
+}

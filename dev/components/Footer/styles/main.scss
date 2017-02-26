@@ -1,0 +1,19 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $gray;
+
+    a {
+        padding: 0px 20px;
+        margin: 10px 0; 
+        color: white;
+        display: inline-block;
+        cursor: pointer;
+        border-right: 1px solid white;
+        &:last-child {
+            border-right: none;
+        }
+    }
+}
