@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import CollapsibleContainer from '../CollapsibleContainer/CollapsibleContainer';
 import accounting from 'accounting';
 

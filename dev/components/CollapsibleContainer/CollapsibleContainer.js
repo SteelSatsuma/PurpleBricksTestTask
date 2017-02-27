@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import cx from 'classnames';
 
 export default class CollapsibleContainer extends Component { // eslint-disable-line
