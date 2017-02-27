@@ -1,3 +1,89 @@
 .negotiations {
     @extend %block;
+    border-color: $bluePrimary;
+    color: $bluePrimary;
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $gray-light;
+        padding: 15px;
+        margin-top: 5px;
+
+        &__text {
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+
+    &__submitBtnContainer, &__negotiateBtnContainer {
+        text-align: right;
+        padding-right: 0;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__input {
+        font-weight: bold;
+        font-size: 18px;
+        padding-left: 20px;
+
+        &__inputGroup {
+            margin-left: -25px;
+            
+            label {
+                font-size: 30px;
+                padding: 0 4px;
+                vertical-align: middle;
+                color: $gray-light;
+            }
+
+            &__inputBox {
+                padding: 5px;
+                margin: 15px 0;
+                border: 1px solid $gray-light;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    &__submitBtnContainer {
+        &__submitBtn {
+            font-size: 18px;
+        }
+    }
+
+    &__error {
+        padding: 15px;
+        color: black;
+        border: 1px solid $alertRed;
+        box-shadow: 0px 0px 0px 1px $alertRed;
+    }
+}
+
+@media screen and (max-width: $screen-md) {
+    .negotiations__box {
+        display: block;
+        &__text {
+            text-align: center;
+        }
+    }
+
+    .negotiations__negotiateBtnContainer {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .negotiations__submitBtnContainer {
+        margin-top: 15px;
+        text-align: left;
+    }
+
+    .negotiations__container {
+        display: block;
+    }
 }

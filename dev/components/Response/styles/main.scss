@@ -1,3 +1,22 @@
 .response {
     @extend %block;
+    background-color: $alertPink;
+    border-color: $alertRed;
+    box-shadow: 0px 0px 0px 1px $alertRed;
+    color: $alertRed;
+
+    .text {
+        font-size: 18px;
+    }
+
+    .collapsibleContainer .collapsibleContainer__top .collapsibleContainer__top__title h3{
+        color: $alertRed;
+    }
+
+    .time, .date {
+        font-size: 13px;
+        color: $bluePrimary;
+        text-align: right;
+        padding: 5px 0;
+    }
 }

@@ -1,0 +1,12 @@
+
+$bluePrimary: #4f2660;
+$blueSecondary: #1fabde;
+$alertRed: $state-danger-text;
+$alertPink: $state-danger-bg;
+
+$max-width: 1000px;
+
+%block {
+    border: 1px solid $gray-light;
+    padding: 15px 25px;
+}

@@ -1,5 +1,19 @@
 .buyerDetails {
     &__inner {
         @extend %block;
+
+        &__row {
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+        margin-left: -15px!important;
+
+            &__label {
+                color: $bluePrimary;
+            }
+
+            &__value {
+
+            }
+        }
     }
 }

@@ -1,3 +1,35 @@
 .propertyDetails {
     @extend %block;
+    border-color: $bluePrimary;
+
+    &__priceBlock {
+        text-align: right;
+
+        &__price {
+            color: $bluePrimary;
+            font-weight: bold;
+            font-size: 22px;
+            margin: 5px 0;
+        }
+    }
+
+    &__detailsBlock {
+        display: flex;
+        align-items: center;
+        &__image {
+            display: inline-block;
+            border: 1px solid $gray-light;
+            width: 90px;
+            height: 60px;
+            margin: 0 15px 0 -15px;
+        }
+
+        &__address {
+            align-self: flex-start;
+            display: inline-block;
+            color: $bluePrimary;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    }
 }
